@@ -16,11 +16,10 @@ An autonomous content generation platform powered by an advanced LangGraph multi
 ## 🖥️ Application Interface & Workflow
 
 ### 1. Landing Page (Ready for Swarm Deployment)
-<img src="input_ui.png" width="100%" alt="Landing Page">
+<img src="https://raw.githubusercontent.com/vivek65666/multi-agent-blog-gen/main/input_ui.png" width="100%" alt="Landing Page">
 
 ### 2. Final Reviewed Output (After Agent Swarm Orchestration)
-<img src="output_ui.png" width="100%" alt="Final Output">
-
+<img src="https://raw.githubusercontent.com/vivek65666/multi-agent-blog-gen/main/output_ui.png" width="100%" alt="Final Output">
 ## 🚀 Local Installation & Setup
 
 1. **Clone the repository:**
