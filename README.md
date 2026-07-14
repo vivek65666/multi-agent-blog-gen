@@ -16,11 +16,10 @@ An autonomous content generation platform powered by an advanced LangGraph multi
 ## 🖥️ Application Interface & Workflow
 
 ### 1. Landing Page (Ready for Swarm Deployment)
-![UI Input](./input_ui.png)
+<img src="Screenshots/input_ui.png.png" width="100%" alt="Landing Page">
 
 ### 2. Final Reviewed Output (After Agent Swarm Orchestration)
-![UI Output](./output_ui.png)
-
+<img src="Screenshots/output_ui.png.png" width="100%" alt="Final Output">
 ## 🚀 Local Installation & Setup
 
 1. **Clone the repository:**
