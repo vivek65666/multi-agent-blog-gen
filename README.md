@@ -13,13 +13,13 @@ An autonomous content generation platform powered by an advanced LangGraph multi
 - **Tools:** Tavily Search Engine, Python 3.x
 - **Frontend:** Responsive HTML5 / CSS3
 
-  ## 🖥️ Application Interface & Workflow
+ ## 🖥️ Application Interface & Workflow
 
 ### 1. Landing Page (Ready for Swarm Deployment)
-![Landing Page](./1.png)
+<img src="input_ui.png" width="100%" alt="Landing Page">
 
 ### 2. Final Reviewed Output (After Agent Swarm Orchestration)
-![Final Output](./2.png)
+<img src="output_ui.png" width="100%" alt="Final Output">
 
 ## 🚀 Local Installation & Setup
 
