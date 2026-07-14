@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multi-Agent Blog Gen Platform</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Autonomous Content Agent Swarm</h1>
+            <p class="subtitle">Powered by LangGraph Workflow Orchestration</p>
+        </header>
+        
+        <div class="form-box">
+            <form action="/generate" method="POST">
+                <div class="form-group">
+                    <input type="text" name="topic" placeholder="Enter a technical blog topic (e.g., Understanding RAG Architectures)..." value="{{ topic }}" required>
+                    <button type="submit">Deploy Swarm Engine</button>
+                </div>
+            </form>
+        </div>
+
+        {% if draft %}
+            <h2 class="workspace-title">Final Reviewed Artifact</h2>
+            <div class="blog-preview">
+                {{ draft | safe }}
+            </div>
+        {% endif %}
+    </div>
+</body>
+</html>
