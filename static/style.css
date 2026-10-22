@@ -104,3 +104,7 @@ button:hover {
     color: #334155;
     margin-bottom: 1.5rem;
 }
+.error { color: #b91c1c; margin-top: 1rem; }
+.meta { color: #475569; font-size: 0.9rem; }
+.sources { text-align: left; margin-top: 1.5rem; }
+.sources a { word-break: break-all; }
