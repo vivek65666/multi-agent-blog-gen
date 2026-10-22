@@ -12,21 +12,42 @@
             <h1>Autonomous Content Agent Swarm</h1>
             <p class="subtitle">Powered by LangGraph Workflow Orchestration</p>
         </header>
-        
+
         <div class="form-box">
             <form action="/generate" method="POST">
                 <div class="form-group">
-                    <input type="text" name="topic" placeholder="Enter a technical blog topic (e.g., Understanding RAG Architectures)..." value="{{ topic }}" required>
+                    <input type="text" name="topic" maxlength="200" placeholder="Enter a technical blog topic (e.g., Understanding RAG Architectures)..." value="{{ topic }}" required>
                     <button type="submit">Deploy Swarm Engine</button>
                 </div>
             </form>
         </div>
 
+        {% if error %}
+            <p class="error" role="alert">{{ error }}</p>
+        {% endif %}
+
         {% if draft %}
             <h2 class="workspace-title">Final Reviewed Artifact</h2>
+            {% if meta %}
+            <p class="meta">
+                Editor score: {{ meta.score }}/10 &middot;
+                Revisions: {{ meta.revisions }} &middot;
+                {{ "Approved" if meta.approved else "Revision limit reached" }}
+            </p>
+            {% endif %}
             <div class="blog-preview">
                 {{ draft | safe }}
             </div>
+            {% if meta and meta.sources %}
+            <div class="sources">
+                <h3>Sources</h3>
+                <ul>
+                    {% for url in meta.sources %}
+                    <li><a href="{{ url }}" target="_blank" rel="noopener noreferrer">{{ url }}</a></li>
+                    {% endfor %}
+                </ul>
+            </div>
+            {% endif %}
         {% endif %}
     </div>
 </body>
